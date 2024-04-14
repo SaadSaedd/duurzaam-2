@@ -104,7 +104,7 @@ let config2 = {
 
 
 //sun/moon
-
+Chart.defaults.color = '#FFFFFF';
 
 
 //chart
@@ -116,15 +116,16 @@ let data = {
         label: "KwH",
         data: [100, 80, 40, 65, 30],
         backgroundColor: [
-            "rgb(30, 30, 200)",
-            "rgb(0, 0, 255)",
-            "rgb(120, 120, 150)",
-            "rgb(70, 70, 70)",
-            "rgb(200, 200, 20)"
+            "#35374B",
+            "#344955",
+            "#50727B",
+            "#50727B",
+            "#78A083"
         ],
         borderwidth: 0,
         offset: 20,
         hoverOffset: 60,
+        borderColor: '#ffa600',
     }]
 }
  
@@ -200,7 +201,7 @@ sunSwitch.onclick = function(){
     const sun = document.getElementById("js--sun");
     const moon = document.getElementById("js--moon")
     const widget1 = document.getElementById("js--widget--1")
-    
+    const suntext = document.getElementById("js--sun-text")
         
         
 
@@ -211,6 +212,7 @@ sunSwitch.onclick = function(){
         widget1.style.background = "linear-gradient(177.9deg, rgb(58, 62, 88) 3.6%, rgb(119, 127, 148) 105.8%)"
         console.log("moon")
         textsun.innerText = text2;
+        suntext.innerHTML = "sunset";
     }else if(sun.style.display = "none"){
        
         sun.style.display = "flex"
@@ -218,7 +220,7 @@ sunSwitch.onclick = function(){
         widget1.style.background = "linear-gradient(109.6deg, rgb(25, 170, 209) 11.3%, rgb(21, 65, 249) 69.9%)"
         console.log("sun")
         textsun.innerText = text
-
+        suntext.innerHTML = "sunrise";
     }
 }
     })
