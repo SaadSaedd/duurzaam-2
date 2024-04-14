@@ -206,21 +206,22 @@ sunSwitch.onclick = function(){
         
 
 
-    if(sun.style.display === "flex"){
-        sun.style.display = "none"
-        moon.style.display = "flex"
-        widget1.style.background = "linear-gradient(177.9deg, rgb(58, 62, 88) 3.6%, rgb(119, 127, 148) 105.8%)"
-        console.log("moon")
-        textsun.innerText = text2;
-        suntext.innerHTML = "sunset";
-    }else if(sun.style.display = "none"){
-       
+    if(moon.style.display === "flex"){
         sun.style.display = "flex"
         moon.style.display = "none"
         widget1.style.background = "linear-gradient(109.6deg, rgb(25, 170, 209) 11.3%, rgb(21, 65, 249) 69.9%)"
-        console.log("sun")
+        console.log("moon")
         textsun.innerText = text
         suntext.innerHTML = "sunrise";
+        suntext.style.color = "#211951"
+    }else{
+        sun.style.display = "none"
+        moon.style.display = "flex"
+        widget1.style.background = "linear-gradient(177.9deg, rgb(58, 62, 88) 3.6%, rgb(119, 127, 148) 105.8%)"
+        console.log("sun")
+        textsun.innerText = text2;
+        suntext.innerHTML = "sunset";
+        suntext.style.color = "#211951"
     }
 }
     })

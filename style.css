@@ -68,8 +68,9 @@ body{
 .suntext{
   position: absolute;
   margin-left: 25rem;
-  margin-top: -25rem;
+  margin-top: -27rem;
  font-family: sans-serif;
+ color: #211951;
 }
 
 .ball--sun{
@@ -398,7 +399,7 @@ body{
 .theme-switch {
  
 
-  --toggle-size: 1rem;
+  --toggle-size: 1.5rem;
   /* the size is adjusted using font-size,
      this is not transform scale,
      so you can choose any size */
@@ -430,7 +431,7 @@ body{
 }
 
 .theme-switch__container {
- 
+ margin-left: 2rem;
   margin-top: 2rem;
   width: var(--container-width);
   height: var(--container-height);
