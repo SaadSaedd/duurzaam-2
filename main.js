@@ -69,35 +69,7 @@ let sundown = text2El;
 
 
 
-//chart
-const ctx2 = document.getElementById("myChart");
- 
-let data2 = {
-    labels: ["jan-feb", "maart-april", "mei juni", "sep-okt", "nov-dec"],
-    datasets:[{
-        label: "KwH",
-        data: [100, 80, 40, 65, 30],
-        backgroundColor: [
-            "rgb(30, 30, 200)",
-            "rgb(0, 0, 255)",
-            "rgb(120, 120, 150)",
-            "rgb(70, 70, 70)",
-            "rgb(200, 200, 20)"
-        ],
-        borderwidth: 0,
-        offset: 20,
-        hoverOffset: 60,
-    }]
-}
- 
-let config2 = {
-    type: "bar",
-    data: data2,
-    options: {
-        maintainAspectRatio: false
-    }
-}
- 
+
 
 
 
@@ -113,7 +85,7 @@ const ctx = document.getElementById("myChart");
 let data = {
     labels: ["jan-feb", "maart-april", "mei juni", "sep-okt", "nov-dec"],
     datasets:[{
-        label: "KwH",
+        label: "opbrengst zonnepanelen",
         data: [100, 80, 40, 65, 30],
         backgroundColor: [
             "#35374B",
@@ -213,7 +185,7 @@ sunSwitch.onclick = function(){
         console.log("moon")
         textsun.innerText = text
         suntext.innerHTML = "sunrise";
-        suntext.style.color = "#211951"
+        
     }else{
         sun.style.display = "none"
         moon.style.display = "flex"
@@ -221,7 +193,7 @@ sunSwitch.onclick = function(){
         console.log("sun")
         textsun.innerText = text2;
         suntext.innerHTML = "sunset";
-        suntext.style.color = "#211951"
+        
     }
 }
     })
