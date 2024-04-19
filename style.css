@@ -14,6 +14,7 @@ body{
     background-color: #003f5c;
     
 }
+
 .widget{
     width: 100%;
     height: 85vh;
@@ -23,6 +24,7 @@ body{
     gap: 2rem;
  
 }
+
 :root {
   --transition: .75s ease;
 }
@@ -70,7 +72,7 @@ body{
   margin-left: 18rem;
   margin-top: -38rem;
   font-size: 7rem;
-  font-family: "Poppins", sans-serif;
+  font-family: sans-serif;
   color: white;
   font-weight:900;
 }
@@ -78,7 +80,7 @@ body{
   margin-top: -28rem;
   margin-left: 21rem;
   font-size: 7rem;
-  font-family: "Seymour One", sans-serif;
+  font-family:  sans-serif;
   font-weight:900;
   color: white;
 }
@@ -87,7 +89,7 @@ body{
   margin-top: -32rem;
   margin-left: 9rem;
   font-size: 3rem;
-  font-family: "Seymour One", sans-serif;
+  font-family:  sans-serif;
   font-weight:900;
   color: white;
 }
@@ -622,3 +624,16 @@ body{
   transform: translateY(-50%);
 }
 
+
+img{
+  position: absolute;
+  width: 18rem;
+  margin-top: -50rem;
+  margin-left: 113rem;
+}
+.textduurzaam{
+  position: absolute;
+  margin-left: 66rem;
+  margin-top: -41rem;
+  color: white;
+}
